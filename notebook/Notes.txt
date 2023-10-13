@@ -1,0 +1,27 @@
+1.Exploratory Data Analysis
+
+Checklist de base:
+
+Analyse de Forme
+
+  . variable target: SARS-Cov-2 exam result
+  . lignes et colonnes: data.shape = (5644, 111)
+  . types de variables: data.dtypes.value_counts() = float64: 70 / object: 37 / int64: 4
+  . Analyse des valeurs manquantes: beaucoup de NaN (1/2 des variables > 90% NaN), 2 grps de données 76% -> Test viral, 89% -> taux sanguins
+
+Analyse de Fond:
+  
+  . Visualisation de la target: df['SARS-Cov-2 exam result'].value_counts() = 10% positifs
+  . Signification des variables: -variables continues standardisées, skewed (asymetriques), test sanguin
+                                 -age quantile: difficile d'interpreter ce graphique, clairement ces données ont été traitées, on ne peut pas savoir car la personne qui a mit ce dataset n'a laissé aucune information á propos de ceci.
+                                 -variables qualitative: binaire (0, 1), viral, Rhinovirus qui semble tres elevée
+  . Relation Variables / Target: - Target/Blood: les taux de Monocytes, platelets, Leukocytes semblent lié au Covid-19 -> hypothèse a tester
+                                 - Target/Age: les individus de faible age sont tres peu contaminés
+                                 - Target/ viral: les doubles maladies sont tres rares. Rhinovirus/Entrevirus positif - covid19 negatif? -> hypothese a tester?
+
+Analyse Detaillée:
+
+   . Relation Variables/variables: - blood_data/ blood_data:certaines variables sont tres correlees: +0,9 (a surveiller)
+                                   - blood_data/ age:
+                                   - viral/ viral:
+

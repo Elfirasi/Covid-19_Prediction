@@ -22,6 +22,6 @@ Analyse de Fond:
 Analyse Detaillée:
 
    . Relation Variables/variables: - blood_data/ blood_data:certaines variables sont tres correlees: +0,9 (a surveiller)
-                                   - blood_data/ age:
+                                   - blood_data/ age: 
                                    - viral/ viral:
 
